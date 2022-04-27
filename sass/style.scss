@@ -6,6 +6,7 @@
 @import "third-area";
 @import "fourth-area";
 @import "fifth-area";
+
 *,
 *::before,
 *::after {
@@ -18,11 +19,6 @@ body {
   height: 100vh;
   font-family: "Be Vietnam Pro", sans-serif;
 }
-
-// Font weight
-$w1: 400;
-$w2: 500;
-$w3: 700;
 // Typography
 h1,
 h2,
@@ -34,11 +30,10 @@ h6 {
   color: $DarkBlue;
 }
 p {
-  color: $DarkGrayishBlue;
+  color: $DarGrayishBlue;
   font-weight: 400;
   font-size: 0.9rem;
 }
-
 .get-started {
   background-color: $BrightRed;
   border: 1px solid $BrightRed;

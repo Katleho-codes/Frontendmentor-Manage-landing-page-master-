@@ -16,10 +16,9 @@
   }
   .owl-carousel .owl-dots .owl-dot.active span,
   .owl-carousel .owl-dots .owl-dot:hover span {
-    background: $BrightRed;
+    background-color: $BrightRed;
     border: 1px solid $BrightRed !important;
   }
-  //
   .testimony-card {
     position: relative;
     box-sizing: border-box;
@@ -51,7 +50,7 @@
     }
   }
   .get-started {
-    margin: 1.5rem auto;
+    margin: 1rem auto;
   }
 }
 @media (max-width: 800px) {

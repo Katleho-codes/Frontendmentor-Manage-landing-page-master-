@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
-/* NAVIGATION */
 .navbar {
   background-color: white;
   display: -webkit-box;
@@ -29,13 +28,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   margin-right: auto;
   padding: 0;
   list-style-type: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -43,15 +43,12 @@
 
 .navbar ul li {
   margin: 0 10px;
-  font-family: #1d1e25;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .navbar ul li a {
   color: #1d1e25;
-  font-size: 0.9rem;
-  font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
@@ -62,7 +59,6 @@
   font-weight: bold;
 }
 
-/* MOBILE MENU & ANIMATION */
 .menu-toggle .bar {
   display: none;
   width: 25px;
@@ -99,10 +95,7 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Media Queries */
-/* Mobile Devices - Phones/Tablets */
-@media only screen and (max-width: 800px) {
-  /* MOBILE NAVIGATION */
+@media (max-width: 800px) {
   .navbar ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -172,7 +165,6 @@
   }
   .main-area .left h1 {
     font-size: 2rem;
-    font-weight: 700;
     text-align: center;
     padding: 0 0.4rem;
   }
@@ -282,7 +274,7 @@
 
 .third-area .owl-carousel .owl-dots .owl-dot.active span,
 .third-area .owl-carousel .owl-dots .owl-dot:hover span {
-  background: #f25f3a;
+  background-color: #f25f3a;
   border: 1px solid #f25f3a !important;
 }
 
@@ -332,7 +324,7 @@
 }
 
 .third-area .get-started {
-  margin: 1.5rem auto;
+  margin: 1rem auto;
 }
 
 @media (max-width: 800px) {
@@ -448,7 +440,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 5rem;
+  margin-left: 0.5rem 0;
 }
 
 .fifth-area .col-two .row .col a {
@@ -467,25 +459,22 @@
   width: 220px;
   padding: 6px 12px;
   border: 1px solid #ccc;
-  /* Gray border */
   border-radius: 2rem;
 }
 
 .fifth-area .col-three input::-webkit-input-placeholder {
-  /* Edge */
-  color: #9095a7;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
-.fifth-area .col-three input:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: #9095a7;
   font-size: 0.8rem;
   font-weight: 500;
 }
 
 .fifth-area .col-three input::-ms-input-placeholder {
+  color: #9095a7;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.fifth-area .col-three input:-ms-input-placeholder {
   color: #9095a7;
   font-size: 0.8rem;
   font-weight: 500;
@@ -504,17 +493,9 @@
   font-weight: 500;
   margin-left: 10px;
   padding: 0.5rem 1.2rem;
-  border: none;
+  border: 1px solid #f25f3a;
   border-radius: 2rem;
   text-transform: capitalize;
-}
-
-.fifth-area .col-three button:hover,
-.fifth-area .col-three button:active,
-.fifth-area .col-three button:focus {
-  color: #f25f3a;
-  background-color: #fafafa;
-  border: 1px solid #f25f3a;
 }
 
 .fifth-area .col-three .copyright-info {
@@ -582,23 +563,20 @@
     width: 280px;
     padding: 6px 12px;
     border: 1px solid #ccc;
-    /* Gray border */
     border-radius: 2rem;
     margin: 1rem 6px 2rem 0;
   }
   .fifth-area .col-three-mobile input::-webkit-input-placeholder {
-    /* Edge */
-    color: #9095a7;
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
-  .fifth-area .col-three-mobile input:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
     color: #9095a7;
     font-size: 0.8rem;
     font-weight: 500;
   }
   .fifth-area .col-three-mobile input::-ms-input-placeholder {
+    color: #9095a7;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .fifth-area .col-three-mobile input:-ms-input-placeholder {
     color: #9095a7;
     font-size: 0.8rem;
     font-weight: 500;
@@ -617,16 +595,9 @@
     font-weight: 500;
     margin: 1rem 0 2rem;
     padding: 0.5rem 1.2rem;
-    border: none;
+    border: 1px solid #f25f3a;
     border-radius: 2rem;
     text-transform: capitalize;
-  }
-  .fifth-area .col-three-mobile button:hover,
-  .fifth-area .col-three-mobile button:active,
-  .fifth-area .col-three-mobile button:focus {
-    color: #f25f3a;
-    background-color: #fafafa;
-    border: 1px solid #f25f3a;
   }
 }
 

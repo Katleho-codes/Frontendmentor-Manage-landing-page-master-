@@ -23,7 +23,7 @@
       .col {
         display: flex;
         flex-direction: column;
-        margin-left: 5rem;
+        margin-left: 0.5rem 0;
         a {
           color: white;
           text-decoration: none;
@@ -39,29 +39,27 @@
     input {
       width: 220px;
       padding: 6px 12px;
-      border: 1px solid #ccc; /* Gray border */
+      border: 1px solid #ccc;
       border-radius: 2rem;
     }
     input::-webkit-input-placeholder {
-      /* Edge */
-      color: $DarkGrayishBlue;
+      // Edge
+      color: $DarGrayishBlue;
       font-size: 0.8rem;
       font-weight: 500;
     }
-
-    input:-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: $DarkGrayishBlue;
+    input::-ms-input-placeholder {
+      // IE 10-11
+      color: $DarGrayishBlue;
       font-size: 0.8rem;
       font-weight: 500;
     }
-
     input::placeholder {
-      color: $DarkGrayishBlue;
+      // Edge
+      color: $DarGrayishBlue;
       font-size: 0.8rem;
       font-weight: 500;
     }
-
     button {
       background-color: $BrightRed;
       color: $VeryLightGray;
@@ -69,16 +67,9 @@
       font-weight: 500;
       margin-left: 10px;
       padding: 0.5rem 1.2rem;
-      border: none;
+      border: 1px solid $BrightRed;
       border-radius: 2rem;
       text-transform: capitalize;
-    }
-    button:hover,
-    button:active,
-    button:focus {
-      color: $BrightRed;
-      background-color: $VeryLightGray;
-      border: 1px solid $BrightRed;
     }
     .copyright-info {
       position: relative;
@@ -134,31 +125,29 @@
       input {
         width: 280px;
         padding: 6px 12px;
-        border: 1px solid #ccc; /* Gray border */
+        border: 1px solid #ccc;
         border-radius: 2rem;
         margin: 1rem 6px 2rem 0;
       }
       input::-webkit-input-placeholder {
-        /* Edge */
-        color: $DarkGrayishBlue;
+        // Edge
+        color: $DarGrayishBlue;
         font-size: 0.8rem;
         font-weight: 500;
       }
-
-      input:-ms-input-placeholder {
-        /* Internet Explorer 10-11 */
-        color: $DarkGrayishBlue;
+      input::-ms-input-placeholder {
+        // IE 10-11
+        color: $DarGrayishBlue;
         font-size: 0.8rem;
         font-weight: 500;
       }
-
       input::placeholder {
-        color: $DarkGrayishBlue;
+        // Edge
+        color: $DarGrayishBlue;
         font-size: 0.8rem;
         font-weight: 500;
         padding: 10px 1rem;
       }
-
       button {
         background-color: $BrightRed;
         color: $VeryLightGray;
@@ -166,16 +155,9 @@
         font-weight: 500;
         margin: 1rem 0 2rem;
         padding: 0.5rem 1.2rem;
-        border: none;
+        border: 1px solid $BrightRed;
         border-radius: 2rem;
         text-transform: capitalize;
-      }
-      button:hover,
-      button:active,
-      button:focus {
-        color: $BrightRed;
-        background-color: $VeryLightGray;
-        border: 1px solid $BrightRed;
       }
     }
   }
