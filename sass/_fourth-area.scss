@@ -1,0 +1,48 @@
+.fourth-area {
+  background-color: $BrightRed;
+  padding: 1rem 0;
+  .row {
+    display: flex;
+    align-items: center;
+    .col-md-5 {
+      margin: 1.4rem auto;
+    }
+    h1 {
+      color: $VeryLightGray;
+      font-weight: 500;
+    }
+  }
+  .get-started {
+    background-color: $VeryLightGray;
+    color: $BrightRed;
+  }
+  .get-started:hover,
+  .get-started:active,
+  .get-started:focus {
+    color: $VeryLightGray;
+    background-color: $BrightRed;
+    border: 1px solid $VeryLightGray;
+  }
+}
+@media (max-width: 800px) {
+  .fourth-area {
+    padding: 5rem 2rem;
+    .col-md-5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin: auto;
+      }
+    }
+    .right {
+      .get-started {
+        font-weight: 700;
+        padding: 0.8rem 1.6rem;
+      }
+    }
+  }
+}

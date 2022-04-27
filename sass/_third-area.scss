@@ -1,0 +1,71 @@
+.third-area {
+  margin: 10rem auto;
+  .owl-stage-outer {
+    padding: 30px 0;
+  }
+  .owl-nav {
+    display: none;
+  }
+  .owl-dots {
+    margin: auto;
+    text-align: center;
+    transition: background-color 0.6s ease;
+    .active {
+      box-shadow: none;
+    }
+  }
+  .owl-carousel .owl-dots .owl-dot.active span,
+  .owl-carousel .owl-dots .owl-dot:hover span {
+    background: $BrightRed;
+    border: 1px solid $BrightRed !important;
+  }
+  //
+  .testimony-card {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    img {
+      border-radius: 50%;
+      width: 65px;
+      position: relative;
+      bottom: -46px;
+    }
+    .text-wrapper {
+      margin: 1rem auto;
+      padding: 1rem 1.8rem 1rem;
+      background-color: $VeryLightGray;
+    }
+    h6 {
+      margin-top: 2rem;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    p {
+      font-weight: 400;
+    }
+  }
+  .get-started {
+    margin: 1.5rem auto;
+  }
+}
+@media (max-width: 800px) {
+  .third-area {
+    margin: 2rem auto 0.6rem;
+    .testimony-card {
+      margin-top: 0.2rem;
+      overflow: hidden;
+      min-width: 300px;
+      margin-left: 1.3rem;
+      .text-wrapper {
+        padding: 1rem 0.6rem;
+        height: 200px;
+      }
+    }
+  }
+}

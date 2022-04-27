@@ -1,0 +1,27 @@
+@media (max-width: 800px) {
+  .main-area {
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 0 0.4rem;
+      }
+      p {
+        font-size: 1rem;
+        padding: 0 0.4rem;
+        text-align: center;
+      }
+      .d-grid {
+        margin: 1rem auto;
+      }
+    }
+    .right {
+      padding: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+@import "colors";
+@import "navbar";
+@import "main-area";
+@import "second-area";
+@import "third-area";
+@import "fourth-area";
+@import "fifth-area";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+// Font weight
+$w1: 400;
+$w2: 500;
+$w3: 700;
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: $DarkBlue;
+}
+p {
+  color: $DarkGrayishBlue;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.get-started {
+  background-color: $BrightRed;
+  border: 1px solid $BrightRed;
+  color: $VeryLightGray;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  display: block;
+  border-radius: 2rem;
+  text-transform: capitalize;
+}
+.get-started:hover,
+.get-started:active,
+.get-started:focus {
+  color: $BrightRed;
+  background-color: $VeryLightGray;
+  border: 1px solid $BrightRed;
+}
+@media (max-width: 800px) {
+  .nav-get-started {
+    display: none;
+  }
+}
